@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+   body {
+    background-image: url(https://cdn.culture.ru/images/2d2d7128-4782-5937-a35b-ff9c27a4a29c); /* Путь к фоновому изображению */
+    background-attachment: fixed; /* Фиксируем фон веб-страницы */
+   }
+  </style>
+<head>
+    <title>Крестики-нолики</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: black;;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .rules {
+            border: 1px solid #333333;
+            padding: 20px;
+            margin: auto;
+            width: 50%;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Правила игры "Крестики-нолики"</h1>
+    <div class="rules">
+        <p>1. Игровое поле: Игровое поле представляет собой сетку, как в обычных крестиках-ноликах, но с дополнительной особенностью - ячейки могут "падать" вниз при условии, что ячейка под ними пустая.</p>
+        <p>2. Ход игры: Игроки по очереди ставят свои символы (крестики или нолики) на любую свободную ячейку на игровом поле.</p>
+        <p>3. Гравитация: После каждого хода все символы на игровом поле "падают" вниз, заполняя первую пустую ячейку в столбце. Это создает новые стратегические возможности, поскольку игроки должны учитывать, какие ячейки будут заполняться следующими.</p>
+        <p>4. Победа: Цель игры остается той же - выстроить ряд из трех своих символов (крестиков или ноликов) горизонтально, вертикально или по диагонали. Первый игрок, сделавший это, побеждает.</p>
+        <p>5. Приятной игры!</p>
+    </div>
+</body>
+<title>Крестики-нолики с гравитацией</title>
+<h1>Игра "Крестики-нолики"</h1>
+<h1>Можешь начинать ходить!</h1>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+<div id="board" class="board"></div>
+</div>
+<script src="{{ url_for('static', filename='scriptxo.js')}}"></script>
+</body>
+</html>

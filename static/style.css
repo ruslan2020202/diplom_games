@@ -1,0 +1,21 @@
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 70vh;
+}
+
+.board {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+grid-gap: 10px;
+}
+
+.cell {
+width: 100px;
+height: 100px;
+background-color: lightblue;
+text-align: center;
+font-size: 50px;
+cursor: pointer;
+}

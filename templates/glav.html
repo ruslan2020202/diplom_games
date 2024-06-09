@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<title>background-attachment</title>
+  <style>
+   body {
+    background-image: url(https://cdn.culture.ru/images/2d2d7128-4782-5937-a35b-ff9c27a4a29c); /* Путь к фоновому изображению */
+    background-attachment: fixed; /* Фиксируем фон веб-страницы */
+   }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Приветствие</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='123.css') }}">
+</head>
+<body>
+  <div class="welcome-page">
+    <h1>Добро пожаловать на сайт логических игр!</h1>
+    <p>Нажми кнопку авторизоваться, там введешь свой логин и пароль, и сможешь играть в игры!</p>
+    <button onclick="window.location.href='{{ url_for('signup') }}'">Авторизация</button>
+  </div>
+</body>
+</html>
